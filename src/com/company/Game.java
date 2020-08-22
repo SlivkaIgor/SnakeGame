@@ -115,6 +115,15 @@ setDots();
             g.drawString("Press F to restart",102,200);
             game=false;
         }
+        for(int i = 1; i<= dots;i++){
+            if(counterX[0]== counterX[i] && counterY[0]==counterY[i]) {
+                g.setColor(Color.BLACK);
+                g.setFont(new Font("Arial", BOLD, 30));
+                g.drawString("Game Over",85,170);
+                g.setFont(new Font("Arial", BOLD, 15));
+                g.drawString("Press F to restart",102,200);
+                game = false;
+            }}
 
 
     }
